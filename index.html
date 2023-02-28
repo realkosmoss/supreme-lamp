@@ -1,0 +1,125 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Kosmos Website">
+<meta property="og:site_name" content="Kosmos Website">
+<meta property="og:image" content="https://retardedkosmos.fun/gay.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://retardedkosmos.fun/">
+<meta property="og:secure_url" content="
+https://retardedkosmos.fun/" />
+<meta name="theme-color" content="#0088ff">
+
+
+<html>
+  <head>
+    <title>Kosmos Website(Actually Fucking Kill Yourself If You Are Browsing This Shit)</title>
+    <link rel="icon" href="/gay.png" type="image/png">
+
+    
+<style>
+  body {
+    background-color: black;
+    color: green;
+    font-size: 16px;
+    font-family: monospace;
+    white-space: pre;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  #slow-text {
+    margin-top: 10%;
+    text-align: center;
+  }
+  #buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  button {
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    margin: 10px;
+    padding: 10px 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  #image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://retardedkosmos.fun/kys.jpg");
+    background-size: cover;
+    opacity: 0;
+    z-index: -1;
+    animation: fade 4s infinite;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+</style>
+
+
+<body>
+  <div id="container">
+    <div id="slow-text"></div>
+    <div id="buttons">
+      <button id="button2">Youtube</button>
+      <button id="button3">Downloads</button>
+      <button id="button4">Private</button>
+    </div>
+  </div>
+  <div id="image"></div>
+</body>
+    <script>
+      document.title = "Kosmos Website";
+      let text = "Kosmos Website\n";
+      let index = 0;
+      let slowText = document.getElementById("slow-text");
+      let button2 = document.getElementById("button2");
+      button2.addEventListener("click", function() {
+        window.location.href = "https://www.youtube.com/channel/UC9PtiLSGAUn5L6f8OcKh24Q";
+      });
+      button3.addEventListener("click", function() {
+        window.location.href = "/games/";
+      });
+      button4.addEventListener("click", function() {
+        window.location.href = "/private.html";
+      });
+      function addLetter() {
+        slowText.innerHTML += text[index];
+        index++;
+        if (index < text.length) {
+          setTimeout(addLetter, 50);
+        }
+      }
+      setTimeout(addLetter, 50);
+    </script>
+  </body>
+</html>
