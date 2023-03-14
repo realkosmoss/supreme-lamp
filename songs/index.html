@@ -1,3 +1,44 @@
-<audio autoplay controls>
-  <source src="https://retardedkosmos.000webhostapp.com/song/ay.mp3" type="audio/mpeg">
-</audio>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hacker themed Moonman K.K.K player</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      
+      audio {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      button {
+        background-color: black;
+        color: green;
+        font-size: 24px;
+        border: 2px solid green;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      button:hover {
+        background-color: green;
+        color: black;
+        transition: all 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color:green">Hacker themed Moonman K.K.K player</h1>
+    <audio autoplay loop>
+      <source src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Moonman_K.K..ogg" type="audio/ogg">
+      <source src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Moonman_K.K..mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button onclick="document.querySelector('audio').pause();">Stop Music</button>
+  </body>
+</html>
