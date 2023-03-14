@@ -11,19 +11,38 @@
       color: #00FF00;
       text-align: center;
     }
-    
-    audio {
-      display: none;
-    }
 
     button {
-      display: none;
+      background-color: #008000;
+      color: #FFFFFF;
+      font-size: 24px;
+      padding: 16px 32px;
+      border-radius: 12px;
+      border: none;
+      position: relative;
+      z-index: 1;
     }
 
+    button:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('');
+      background-size: cover;
+      filter: brightness(50%);
+      border-radius: 12px;
+      z-index: -1;
+    }
   </style>
 </head>
 <body>
   <h1>Moonman K.K.K</h1>
-  <audio src="https://retardedkosmos.000webhostapp.com/song/ay.mp3" autoplay loop></audio>
+  <div style="text-align:center;">
+    <button onclick="document.getElementById('audio').play()">Play Music</button>
+  </div>
+  <audio id="audio" src="https://retardedkosmos.000webhostapp.com/song/ay.mp3" autoplay loop></audio>
 </body>
 </html>
